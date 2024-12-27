@@ -1,0 +1,96 @@
+
+body {
+  font-family: 'Serif', sans-serif;
+  background-color: #d3d3d3; /* Light gray background */
+  margin: 0;
+  padding: 20px; /* Add padding to the body to ensure content isn't cut off */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: flex-start; /* Align content at the top */
+  align-items: center; /* Center form horizontally */
+  min-height: 100vh; /* Ensure body takes full height of the screen */
+  box-sizing: border-box; /* Include padding in total height calculation */
+}
+
+/* Title and description */
+#title {
+  text-align: center;
+  color: #000; /* Black text */
+  margin-bottom: 10px;
+}
+
+#description {
+  text-align: center;
+  color: #000; /* Black text */
+  margin-bottom: 20px;
+}
+
+/* Survey form styling */
+#survey-form {
+  background-color: #fff; /* White background for the form */
+  padding: 20px;
+  border-radius: 10px; /* Slightly rounded corners */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  max-width: 100%;
+  overflow: auto; /* Allow overflow inside the form */
+  margin-top: 20px; /* Add margin at the top to avoid overlap with title */
+}
+
+/* Form input fields */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px; /* Rounded corners for input fields */
+  border: 1px solid #ccc;
+  font-family: 'Serif', sans-serif;
+}
+
+/* Label styling */
+label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000; /* Black text */
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Dropdown and radio button layout */
+#dropdown, #radio-label, #checkboxes-label {
+  margin-bottom: 10px;
+}
+
+/* Button styling */
+button[type="submit"] {
+  background-color: #4CAF50; /* Green button */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px; /* Rounded corners */
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Add spacing between form elements */
+div {
+  margin-bottom: 15px;
+}
+
+/* Textarea specific styling */
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+

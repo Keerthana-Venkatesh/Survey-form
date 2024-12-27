@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>survey form</title>
+</head>
+<body>
+    <h1 id="title">Slot preferces at VIT</h1>
+     <p id="description">This is a survey to understand whether students at VIT prefer morning or evening slot.  </p>
+       <form id="survey-form">
+          <div>
+    <label for="name" id="name-label">1.Your Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+  </div>
+  <div>
+    <label for="email" id="email-label">2.Your Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+  </div>
+  <div>
+    <label for="number" id="number-label">3.Your Reg no:</label>
+    <input type="number" id="number" name="number" placeholder="Enter your Reg no" min="4"max="10" required>
+  </div>
+   <div>
+    <label for="dropdown" id="dropdown-label">4.Preferred Slot:</label>
+    <select id="dropdown" name="slot" required>
+      <option value="morning">Morning</option>
+      <option value="evening">Evening</option>
+    </select>
+  </div>
+  <div>
+    <label id="radio-label">5.Preferred place to study at VIT:</label>
+    <div>
+      <input type="radio" id="library-radio" name="lib" value="library" required>
+      <label for="library-radio">Library</label>
+    </div>
+    <div>
+      <input type="radio" id="hostel-radio" name="lib" value="hostel" required>
+      <label for="hostel-radio">Hostel</label>
+    </div>
+  </div>
+  <div>
+    <label for="checkboxes" id="checkboxes-label">6.How often do you take break:</label>
+    <div>
+      <input type="checkbox" id="fic" name="genre" value="fic">
+      <label for="fic">Every 30 minutes</label>
+    </div>
+    <div>
+      <input type="checkbox" id="non" name="genre" value="non">
+      <label for="non">Every hour</label>
+    </div>
+    <div>
+      <input type="checkbox" id="fan" name="genre" value="fan">
+      <label for="fan">Take when I feel exhausted</label>
+    </div>
+    <div>
+      <input type="checkbox" id="mys" name="genre" value="mys">
+      <label for="mys">Do not take</label>
+    </div>
+  </div>
+   <div>
+    <label for="comments" id="comments-label">7.Why do you prefer the slot you mentioned above:</label>
+    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here..."></textarea>
+  </div>
+    <button type="submit" id="submit">Submit</button>
+</form>
+</body>
+  </html>
